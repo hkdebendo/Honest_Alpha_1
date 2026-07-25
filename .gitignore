@@ -1,0 +1,22 @@
+# données (téléchargées, jamais versionnées)
+data/
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+.venv
+# éditeur
+.vscode/
+.idea/
+catboost_info/
+
+# les prédictions brutes font ~1 Mo chacune ; les tableaux et figures
+# agrégés dans results/ eux, se versionnent
+results/pred_*.csv
+results/ic_*.csv
+results/icrang_*.csv
+
+notebook/

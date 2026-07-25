@@ -1,0 +1,19 @@
+# Découpage temporel. Ces paramètres sont figés avant de regarder le moindre
+# résultat ; si on les change ensuite, il faut le dire dans le rapport.
+
+train_min: 1008        # ~4 ans de bourse pour la première fenêtre (extensible ensuite)
+bloc_test: 60          # ~3 mois hors échantillon par pli
+gap: 10                # purge : > horizon + retard (6 j), pour les cibles qui se chevauchent
+part_validation: 0.2   # fin de la fenêtre d'entraînement réservée aux hyperparamètres
+
+graines_mlp: [0, 1, 2, 3, 4]
+
+portefeuille:
+  quantiles: 5
+  rebalancement: 5      # jours entre deux rebalancements (pas de recouvrement des détentions)
+  couts_bps: 10         # par aller, appliqués au turnover réel
+
+stats:
+  lags_newey_west: 6
+  taille_bloc_bootstrap: 10
+  n_bootstrap: 2000

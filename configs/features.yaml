@@ -1,0 +1,13 @@
+# Cible et variables. Tout est calculé uniquement avec le passé.
+
+cible:
+  horizon: 5      # jours de détention
+  retard: 1       # on entre à la clôture de t+1, pas au prix qui a servi au signal
+
+variables:
+  momentum: [1, 5, 20, 60]   # rendements logarithmiques cumulés passés
+  vol_longue: 20            # écart-type des rendements, fenêtre longue
+  vol_courte: 5             # fenêtre courte (pour le rapport courte/longue)
+  volume_mm: 20             # moyenne glissante du volume
+
+standardisation: zscore_transversal   # date par date, entre actifs

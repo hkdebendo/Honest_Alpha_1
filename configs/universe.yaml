@@ -1,0 +1,53 @@
+# Univers d'ETF, figé avant toute expérience.
+#
+# Choix volontairement simple : des fonds gros et liquides sur plusieurs
+# classes d'actifs. Les tickers sans assez d'historique sont écartés au
+# nettoyage plutôt que complétés (on préfère perdre un actif que deviner
+# ses prix).
+
+debut: "2013-01-01"
+historique_min_jours: 2520   # ~10 ans de bourse
+
+tickers:
+  # actions américaines
+  - SPY
+  - IVV
+  - VTI
+  - QQQ
+  - DIA
+  - IWM
+  - IJR
+  - VB
+  - VUG
+  - VTV
+  # secteurs
+  - XLK
+  - XLF
+  - XLE
+  - XLV
+  - XLI
+  - XLP
+  - XLU
+  - XLY
+  - XLB
+  - XLRE
+  # actions internationales
+  - EFA
+  - EEM
+  - VEA
+  - VWO
+  - EWJ
+  # obligations
+  - AGG
+  - TLT
+  - IEF
+  - SHY
+  - LQD
+  - HYG
+  - TIP
+  # matières premières
+  - GLD
+  - SLV
+  - USO
+  # immobilier coté
+  - VNQ
