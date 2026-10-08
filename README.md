@@ -1,4 +1,4 @@
-# HonestAlpha
+# HonestAlpha_1
 
 Prédire les rendements boursiers est facile. Se tromper en croyant qu'on
 prédit, c'est encore plus facile. Ce projet est un petit laboratoire
